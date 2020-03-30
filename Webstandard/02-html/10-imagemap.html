@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image map</title>
+  </head>
+  <body>
+    <h1>이미지맵</h1>
+    <p>
+      <img src="img/photo.jpg" alt="" usemap="#map" />
+      <map name="map" id="map">
+        <area
+          shape="rect"
+          coords="12,24,205,135"
+          href="http://naver.com"
+          alt=""
+        />
+        <area shape="circle" coords="323,82,50" href="" alt="" />
+        <area
+          shape="poly"
+          coords="547,20,589,61,603,120,539,138,478,119,507,47"
+          href=""
+          alt=""
+        />
+      </map>
+    </p>
+  </body>
+</html>

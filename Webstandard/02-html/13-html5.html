@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>html5 form</title>
+  </head>
+  <body>
+    <form action="#" method="POST">
+      <fieldset>
+        <legend>html5 form</legend>
+        <p>
+          <label for="userName"">이름</label>
+          <input type="text" id="userName"" name="userName"" placeholder="이름"/>
+        </p>
+        <p>
+          <label for="userMail" name="userMail">이메일</label>
+          <input type="email" id="userMail" name="userMail" placeholder="admin@naver.com" autofocus />
+        </p>
+        <p>
+            <label for="userUrl">웹사이트</label>
+            <input type="url" id="userUrl" name="userUrl" value="" placeholder="wachsenHaus.com">
+        </p>
+        <p>
+            <label for="userNum">주문수량</label>
+            <input type="number" id="userNum" name="userNum" min="1" max="20" value="3">
+            <span>개</span>
+        </p>
+        <p>
+            <label for="userRange">길이</label>
+            <input type="range" id="userRange" name="userRange" min="0" max="100" value="30" step="10">
+        </p>
+        <p>
+            <label for="userDate">제출일</label>
+            <input type="date" id="userDate" name="userDate" min="1900-01-01" max="9999-12-31" value="2020-03-31">
+        </p>
+        <p>
+            <label for="userColor"></label>
+            <input type="color" id="userColor" name="userColor">
+        </p>
+        <p>
+            <label for="userTel">연락처</label>
+            <input type="tel" id="userTel" name="userTel" value="">
+        </p>
+      </fieldset>
+      <button type="submit">전송</button>
+    </form>
+  </body>
+</html>

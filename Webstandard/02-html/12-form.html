@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="go.php" method="GET">
+      아이디 <input type="text" name="field" value="asdf" />
+      <input type="submit" value="전송" />
+      <fieldset>
+        <legend>filedset test</legend>
+        <p>
+          <label for="name">이름</label>
+          <input type="text" id="name" value="aa?" />
+        </p>
+        <p>
+          <label for="idname">아이디</label>
+          <input type="text" id="idname" name="a" value="" />
+          <input type="button" value="아이디 중복 확인" />
+        </p>
+        <p>
+          <label for="userpass">비밀번호</label>
+          <input type="password" id="userpass" name="b" value="" />
+        </p>
+        <p>
+          <label for="usercomm"></label>
+          <textarea
+            name="usercomm"
+            id="usercomm"
+            cols="60"
+            rows="10"
+          ></textarea>
+        </p>
+        <p>
+          <label for="usersel">지역선택</label>
+          <select name="usersel" id="usersel">
+            <option value="">서울</option>
+            <option value="">인천</option>
+            <option value="">부산</option>
+            <option value="">광주</option>
+            <option value="">대전</option>
+          </select>
+        </p>
+        <p>
+          <span>성별</span>
+          <label for="male">남자</label>
+          <input type="radio" name="choice" value="male" />
+          <label for="female">여자</label>
+          <input type="radio" name="choice" value="female" />
+        </p>
+        <p>
+          <span>취미는?</span>
+          <label for="trip">여행</label>
+          <input type="checkbox" id="trip" />
+          <label for="read">독서</label>
+          <input type="checkbox" id="read"">
+          <label for="movie">영화감사</label>
+          <input type="checkbox" id="movie" />
+        </p>
+      </fieldset>
+      <p>
+        <!-- <input type="submit" value="전송" /> -->
+        <button type="submit">전송</button>
+        <!-- <input type="reset" value="취소" /> -->
+        <button type="reset"">취소</button>
+      </p>
+    </form>
+  </body>
+</html>
