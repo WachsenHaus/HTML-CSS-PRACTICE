@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      /* boxmodels
+            content width / height
+
+         */
+      .box3 {
+        display: inline;
+        background-color: lime;
+        border: 5px solid black;
+        width: 600px;
+        height: 300px;
+        /* 100px 50x   위아래 | 좌우 */
+        /* 100px 50px 10px 위 | 좌우 | 아래 */
+        /* 100px 50px 20px 30px  위 | 우 | 아래 | 좌  */
+        padding: 20px;
+
+        /* 마진이 위아래 겹쳐진다. (box일경우) */
+        margin: 20px;
+
+        /* css3 <- ie8,7 .....(x) */
+        /* 커지지않고 패딩이나 보더를 수정할수있다. 전체사이즈를 600으로 정해버린다. */
+        box-sizing: border-box;
+
+        /* border style : solid | dashed | dotted | double | inset | outset | ridge | groove */
+        /* border color */
+        /* border width */
+        border-style: double;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box3">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, pariatur
+      autem illum nostrum praesentium incidunt error maiores, sapiente odit
+      nihil porro ducimus facere nulla. Quasi suscipit totam sed expedita
+      labore!
+    </div>
+    <div class="box3">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, pariatur
+      autem illum nostrum praesentium incidunt error maiores, sapiente odit
+      nihil porro ducimus facere nulla. Quasi suscipit totam sed expedita
+      labore!
+    </div>
+    <div class="box3">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, pariatur
+      autem illum nostrum praesentium incidunt error maiores, sapiente odit
+      nihil porro ducimus facere nulla. Quasi suscipit totam sed expedita
+      labore!
+    </div>
+  </body>
+</html>

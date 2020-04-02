@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      a:link {
+        color: red;
+      }
+      a:visited {
+        color: yellow;
+      }
+      a:hover {
+        color: green;
+      }
+      a:active {
+        color: orchid;
+      }
+      a:focus {
+        background-color: red;
+      }
+      a {
+        color: gray;
+        text-decoration: none;
+      }
+      .lead::first-line {
+        background-color: lime;
+      }
+
+      .lead:before {
+        content: "css로 추가한 영역";
+        font-size: 20px;
+      }
+      .lead:after {
+        content: "css로 추가한 영역";
+        font-size: 20px;
+      }
+
+      div {
+        background-color: rosybrown !important;
+      } /* important는 무조건 적용시킴.*/
+      div {
+        background-color: lime;
+      } /*type, 우선순위1점*/
+      .sample {
+        background-color: red;
+      } /*10점*/
+      #sample {
+        background-color: blue;
+      } /*100점*/
+    </style>
+  </head>
+  <body>
+    <h1>css selector</h1>
+    <p class="lead">
+      <a href="http://naver.com">Lorem ipsum dolor sit amet consectetur,</a>
+      adipisicing elit. Officiis explicabo sapiente aut veritatis autem saepe
+      qui fugiat atque. Et dolore illum minima nam
+      <a href="">facere perferendis quidem!</a>Ab earum excepturi dolor.
+    </p>
+
+    <div class="sample" id="sample">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime soluta
+      nam sunt eum sit deserunt repellendus odit est, illum obcaecati amet
+      facere officia quis distinctio neque repudiandae harum ratione placeat!
+    </div>
+  </body>
+</html>
