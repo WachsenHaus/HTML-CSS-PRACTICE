@@ -9,16 +9,20 @@
         vertical-align: top;
       }
       .area {
+        /* margin-left: -20px auto; */
         width: 800px;
+        /* 영역에서 넘치는 부분 */
+        overflow: hidden;
         margin: 0 auto;
+        padding: 0;
         border: 3px dashed red;
         zoom: 1;
         /* IE6,IE7 hack */
       }
-      .area::after {
-        content: "";
+      .area:after {
+        /* content: "";
         display: block;
-        clear: both;
+        clear: both; */
       }
       .area .thumb {
         float: left;
